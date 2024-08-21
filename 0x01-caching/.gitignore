@@ -2,3 +2,5 @@ test.py
 tests
 test
 main.py
+
+__pycache__
