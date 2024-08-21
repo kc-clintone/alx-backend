@@ -6,7 +6,7 @@ FIFO caching
 from base_caching import BaseCaching
 
 
-class FFOCache(BaseCaching):
+class FIFOCache(BaseCaching):
     """
     FIFOCache implements a caching system using
     FIFO (First-In, First-Out) algorithm.
