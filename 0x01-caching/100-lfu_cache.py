@@ -38,7 +38,8 @@ class LFUCache(BaseCaching):
                             if v == min(self.frequency.values())]
 
                 if len(lfu_keys) > 1:
-                    lfu_lru_key = next(k for k in self.usage_order if k in lfu_keys)
+                    lfu_lru_key = next(k for k in self.usage_order
+                                       if k in lfu_keys)
                 else:
                     lfu_lru_key = lfu_keys[0]
 
