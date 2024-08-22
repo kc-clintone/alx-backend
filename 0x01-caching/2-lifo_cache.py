@@ -24,7 +24,8 @@ class LIFOCache(BaseCaching):
         Adding an item in the cache with LIFO replacement policy.
         """
         if key is not None and item is not None:
-            if key not in self.cache_data and len(self.cache_data) >= BaseCaching.MAX_ITEMS:
+            if key not in self.cache_data and len(self.cache_data)
+            >= BaseCaching.MAX_ITEMS:
 
                 if self.last_key:
                     del self.cache_data[self.last_key]
