@@ -38,7 +38,7 @@ babel = Babel(app)
 
 
 @babel.localeselector
-def get_locale():
+def get_locale() -> str:
     """
     Determine the best match for supported languages based on the
     client's request.
@@ -51,7 +51,7 @@ def get_locale():
 
 
 @app.route('/')
-def index():
+def index() -> str:
     """
     The index view function that handles requests to the root URL
     ('/').
