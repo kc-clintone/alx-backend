@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-
 """
 0-app.py - A basic Flask application.
 
@@ -8,6 +7,7 @@ When accessed, the route renders an HTML page with the title
 "Welcome to Holberton"
 and a header "Hello world".
 """
+
 
 from flask import Flask, render_template
 
