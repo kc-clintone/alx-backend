@@ -8,10 +8,10 @@ When accessed, the route renders an HTML page with the title
 and a header "Hello world".
 """
 
-
 from flask import Flask, render_template
 
 app = Flask(__name__)
+
 
 @app.route('/')
 def index():
@@ -24,4 +24,5 @@ def index():
     displays a page with the title "Welcome to Holberton" and
     a header "Hello world".
     """
+
     return render_template('0-index.html')
