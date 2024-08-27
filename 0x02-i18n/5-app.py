@@ -40,8 +40,8 @@ def get_user() -> Union[Dict, None]:
     """
     Get user based on user_id.
     """
-    login_id = request.args.get('login_as')
-    if login_id:
+    user_id = request.args.get('login_as')
+    if user_id:
         return users.get(int(login_id))
     return None
 
