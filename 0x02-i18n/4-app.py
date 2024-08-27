@@ -68,7 +68,7 @@ def index() -> str:
     which displays a page with the title "Welcome to Holberton"
     and a header "Hello world".
     """
-    return render_template("4-index.html)
+    return render_template("4-index.html")
 
 
 if __name__ == "__main__":
